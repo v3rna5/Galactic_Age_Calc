@@ -1,22 +1,30 @@
-import { AgeCalc } from './../src/calculator.js';
+import { Calculator } from './../src/calculator.js';
 
-describe('AgeCalcTests', function() {
+describe('CalculatorTests', function() {
 
   it('should convert age to seconds', function() {
-    let ageCalc = new AgeCalc();
-    expect(ageCalc.ageInSeconds(1)).toEqual(31536000);
+    let calculator = new Calculator();
+    expect(calculator.ageInSeconds(1)).toEqual(31536000);
   });
   it('should convert age to Mercury years', function() {
-  let ageCalc = new AgeCalc();
-  expect(ageCalc.ageOnMerc(21)).toEqual(87);
+  let calculator = new Calculator();
+  expect(calculator.ageOnMerc(21)).toEqual(87);
 });
-it('should convert age to Venus years', function() {
-  let ageCalc  = new AgeCalc();
-  expect(ageCalc.ageOnVenus(21)).toEqual(33);
+it ('should covert age to Venus years', function() {
+  let calculator = new Calculator();
+  expect(calculator.ageOnVenus(21)).toEqual(33);
 
 });
-it('should convert age to Mars years', function() {
-  let ageCalc  = new AgeCalc();
-  expect(ageCalc.ageOnMars(21)).toEqual(11);
-})
+it('should convert age to Mars age years', function() {
+    let calculator  = new Calculator();
+    expect(calculator.ageInMars(21)).toEqual(11);
+  });
+  // it('should convert age to Juniper age years'), function() {
+  //   let calculator = new Calculator();
+  //   expect(calculator.ageInJuniper(21)).toFixed(1.75);
+  // });
+  it('over Hundred'), function () {
+    let calculator = new Calculator();
+    expect(calculator.overHundred(101)).toEqual(true);
+  }
 });

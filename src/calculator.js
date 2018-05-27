@@ -1,6 +1,6 @@
 let moment = require('moment');
 
-export class AgeCalc {
+export class Calculator {
 
 ageInSeconds(age) {
   let secondsInYear = (age * 31536000);
@@ -15,8 +15,17 @@ ageOnVenus(age) {
   let venusAge = (Math.floor(age/.62));
   return venusAge;
 }
-ageOnMars(age) {
-  let marsAge = (Math.floor(age/1.88));
-  return marsAge;
-}
+ageInMars(age) {
+   let marsAge = (Math.floor(age/1.88));
+   return marsAge;
+ }
+ ageInJuniper(age) {
+   let juniperAge = (Math.floor(age/11.86));
+   return juniperAge;
+ }
+ overHundred(age) {
+   let covertHundred = (age > 100);
+   return overHunder;
+
+ }
 }
