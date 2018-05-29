@@ -1,5 +1,3 @@
-// let moment = require('moment');
-
 export class Calculator {
 
 // twoDates(date1, date2){
