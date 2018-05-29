@@ -45,7 +45,7 @@ _The user input age in years and convert to planet's solar years and how he/she 
 
 * _User has already surpassed the average life expectancy, return the number of years they have lived past the life expectancy.
   * _Example Input Earth age: 101_
-  * _Example Output: 1_
+  * _Example Output: true_
 
 ## Setup/Installation Requirements
 

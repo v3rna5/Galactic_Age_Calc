@@ -2,8 +2,16 @@ let moment = require('moment');
 
 export class Calculator {
 
+// twoDates(date1, date2){
+//   date1 = ("2018, 25, 05")
+//   date2 = ("1993, 01, 01")
+//   let twodates = (date1 - date2);
+//
+// return twodates;
+//
+
 ageInSeconds(age) {
-  let secondsInYear = (age * 31536000);
+  let secondsInYear = (age * 365 * 24 * 60 * 60);
   return secondsInYear;
 }
 ageOnMerc(age) {
@@ -23,9 +31,12 @@ ageInMars(age) {
    let juniperAge = (Math.floor(age/11.86));
    return juniperAge;
  }
- overHundred(age) {
-   let covertHundred = (age > 100);
-   return overHunder;
-
+ badHabit(age) {
+   let habit = (age - 10);
+   return habit;
  }
+lifeSpan(age) {
+  let overAge = (age = 101);
+  return true;
+}
 }
